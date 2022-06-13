@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(/fonts/ptsans-400.woff2);
+}
+
+
+body {
+  font-size: medium;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  text-align: center;
+  background: #82B3D3;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu-list-item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  text-align: left;
+}
+
+.block-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+}
+
+.block-title-w {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.block-paragraph {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.block-paragraph-w {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.advantages-list-title-w {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color:#FFFFFF;
+}
+
+.advantages-list-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-list-description-black {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages-list-description-w {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+}
