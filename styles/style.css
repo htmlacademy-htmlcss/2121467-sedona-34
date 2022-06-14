@@ -36,6 +36,7 @@ a:hover {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: ;
 
 }
 
@@ -101,6 +102,14 @@ a:hover {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
 }
 
 .search-button {
@@ -110,4 +119,108 @@ a:hover {
   text-transform: uppercase;
   color: #FFFFFF;
 
+}
+
+/*Catalog extra*/
+
+.main-catalog-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF
+}
+
+.nav-Breadcrumbs-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.filter {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.sedona-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.sedona-button-small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hotel-select {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-card-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.hotel-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.buttom-favourite,
+.buttom-info {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.buttom-favourite {
+  background:  #7DB54F;
+}
+
+.buttom-info {
+  background: #756157;
+}
+
+.rate {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.page-number-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.hotel-number {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
