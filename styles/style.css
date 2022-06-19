@@ -92,8 +92,6 @@ width: 390px ;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-
-
 }
 
 .block-title-w {
@@ -138,6 +136,7 @@ width: 390px ;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
 }
 
 .advantages-list-description-black {
@@ -227,7 +226,7 @@ width: 390px ;
   color: #FFFFFF
 }
 
-.nav-Breadcrumbs-item {
+.nav-breadcrumbs-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -286,7 +285,7 @@ h2 {
   color: #333333;
 }
 
-.buttom-favourite,
+.button-favourite,
 .buttom-info {
   font-weight: 700;
   font-size: 16px;
@@ -294,11 +293,11 @@ h2 {
   color: #FFFFFF;
 }
 
-.buttom-favourite {
+.button-favourite {
   background:  #7DB54F;
 }
 
-.buttom-info {
+.button-info {
   background: #756157;
 }
 
@@ -326,5 +325,64 @@ h2 {
   display: flex;
   justify-content: center;
 
+}
+.catalog-filter {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
 
+}
+
+.nav-breadcrumbs {
+  display: flex;
+
+  flex-direction: column;
+;
+}
+
+.catalog-hotels-filter {
+  display: flex;
+}
+
+.hotels-found {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hotel-select {
+  width: 287px;
+  height: 48px;
+  justify-content: space-between;
+}
+
+.hotel-list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: left;
+  flex-wrap: wrap;
+  width: 1056px;
+}
+
+.hotel-card {
+  width: 340px;
+}
+
+.hotels-on-page {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 1056px;
+}
+
+.page-number {
+  display: flex;
+  width: 370px;
+
+}
+
+.page-number-item {
+  width: 55px;
 }

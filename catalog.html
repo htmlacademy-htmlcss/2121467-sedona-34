@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <title>HTML academy: SEDONA</title>
   <link rel="stylesheet" href="styles/style.css">
+  <style>
+    .catalog-filter {
+    }
+  </style>
 </head>
 <body>
 <!-- Header menu -->
@@ -33,23 +37,22 @@
 <!-- Catalog of hotels  -->
 <!-- Filter  -->
 <main class="main-catalog">
-  <section class="catalog-hotels">
-    <header class="main-catalog-header">
-      <span class="visually-hidden">Седона. Красивый горный пейзаж</span>
-      <h1 class="main-catalog-header-title">Гостиницы Седоны</h1>
-      <ul class="nav-Breadcrumbs">
-        <li class="nav-Breadcrumbs-item">
-          <a class="nav-link" href="index.html">
-            <span class="visually-hidden">Home page</span>
-          </a>
-        </li>
-        <li class="nav-Breadcrumbs-item">
-          <a href="#">Гостиницы</a>
-        </li>
-      </ul>
-    </header>
+  <div class="catalog-hotels">
+    <h1 class="main-catalog-header-title">Гостиницы Седоны</h1>
+    <ul class="nav-breadcrumbs">
+      <li class="nav-breadcrumbs-item">
+        <a class="nav-link" href="index.html">
+          <span class="visually-hidden">Главная страница</span>
+        </a>
+      </li>
+      <li class="nav-breadcrumbs-item">
+        <a href="#">Гостиницы</a>
+      </li>
+    </ul>
+  </div>
     <h2 class="visually-hidden">Каталог отелей с фильтрами</h2>
-    <form action="https://echo.htmlacademy.ru/" class="catalog-hotels-filter" method="get">
+  <div class="catalog-filter">
+  <form action="https://echo.htmlacademy.ru/" class="catalog-hotels-filter" method="get">
       <!-- Catalog checkbox  -->
       <fieldset class="filter">
         <legend class="filter-title">Инфраструктура</legend>
@@ -76,12 +79,14 @@
         <input type="radio" id="appartment" name="accomodation-type">
         <label for="appartment">Аппартаменты</label>
       </fieldset>
-      <!-- Button  -->
-      <button class="sedona-button" type="submit">Применить</button>
-      <button class="sedona-button-small" type="submit">Сбросить</button>
     </form>
-  </section>
+
+  <!-- Button  -->
+  <button class="sedona-button" type="submit">Применить</button>
+  <button class="sedona-button-small" type="submit">Сбросить</button>
+  </div>
   <!-- Sorted by popularity, price  -->
+  <div class="hotels-found">
   <h2>НАЙДЕНО ГОСТИНИЦ: 38</h2>
   <label for="hotel-select"></label>
 
@@ -96,7 +101,7 @@
   <a href="#"><span class="visually-hidden"></span>Карточки</a>
   <a href="#"><span class="visually-hidden"></span>Лента</a>
   <a href="#"><span class="visually-hidden"></span>Список</a>
-
+  </div>
   <!-- Hotels cards.  -->
   <!-- Card1  -->
 
@@ -107,11 +112,11 @@
         <img src="images/amara-resort.jpg" alt="Amara Resort & Spa">
       </a>
       <dl class="hotel-price">
-        <dt class="hotel-price-item">Готиница</dt>
+        <dt class="hotel-type">Гоcтиница</dt>
         <dd class="hotel-price-value">от 4000</dd>
       </dl>
-      <a class="buttom-info" href="#">Подробнее</a>
-      <button class="buttom-favourite" type="submit">В избранное</button>
+      <a class="button-info" href="#">Подробнее</a>
+      <button class="button-favourite" type="submit">В избранное</button>
       <span class="visually-hidden">4 звезды</span>
       <span class="rate">Рейтинг 8,5</span>
     </li>
@@ -122,11 +127,11 @@
         <img src="images/villas-hotel.jpg" alt="Villas at Poco Diablo">
       </a>
       <dl class="hotel-price">
-        <dt class="hotel-price-item">Готиница</dt>
+        <dt class="hotel-type">Гоcтиница</dt>
         <dd class="hotel-price-value">от 5000</dd>
       </dl>
-      <a class="buttom-info" href="#">Подробнее</a>
-      <button class="buttom-favourite" type="submit">В избранное</button>
+      <a class="button-info" href="#">Подробнее</a>
+      <button class="button-favourite" type="submit">В избранное</button>
       <span class="visually-hidden">4 звезды</span>
       <span class="rate">Рейтинг 9,2</span>
     </li>
@@ -137,11 +142,11 @@
         <img src="images/desert-hotel.jpg" alt="Desert Quail Inn">
       </a>
       <dl class="hotel-price">
-        <dt class="hotel-price-item">Готиница</dt>
+        <dt class="hotel-type">Гоcтиница</dt>
         <dd class="hotel-price-value">от 2500</dd>
       </dl>
-      <a class="buttom-info" href="#">Подробнее</a>
-      <button class="buttom-favourite" type="submit">В избранное</button>
+      <a class="button-info" href="#">Подробнее</a>
+      <button class="button-favourite" type="submit">В избранное</button>
       <span class="visually-hidden">3 звезды</span>
       <span class="rate">Рейтинг 6,9</span>
     </li>
@@ -152,26 +157,20 @@
         <img src="images/greentree-hotel.jpg" alt="GreenTree Inn">
       </a>
       <dl class="hotel-price">
-        <dt class="hotel-price-item">Готиница</dt>
+        <dt class="hotel-type">Гоcтиница</dt>
         <dd class="hotel-price-value">от 1500</dd>
       </dl>
-      <a class="buttom-info" href="#">Подробнее</a>
-      <button class="buttom-favourite" type="submit">В избранное</button>
+      <a class="button-info" href="#">Подробнее</a>
+      <button class="button-favourite" type="submit">В избранное</button>
       <span class="visually-hidden">2 звезды</span>
       <span class="rate">Рейтинг 5,0</span>
     </li>
   </ul>
-
 </main>
 
-<!-- Select how many hotels at the page -->
 
-<label for="hotel-number" class="hotel-number">Гостиниц на странице</label>
-<select id="hotel-number">
-  <option value="4" selected>4</option>
-  <option value="6">6</option>
-  <option value="8">8</option>
-</select>
+<div class="hotels-on-page">
+
 
 <!-- Page number -->
 
@@ -183,7 +182,14 @@
   <li class="page-number-item"><a href="#">...</a></li>
   <li class="page-number-item"><a href="#">10</a></li>
 </ul>
-
+  <!-- Select how many hotels at the page -->
+  <label for="hotel-number" class="hotel-number">Гостиниц на странице</label>
+  <select id="hotel-number">
+    <option value="4" selected>4</option>
+    <option value="6">6</option>
+    <option value="8">8</option>
+  </select>
+</div>
 <!-- Subscribe to get new info by mail -->
 <section class="subscribe">
   <h2 class="block-title">Подпишитесь на рассылку</h2>
