@@ -3,13 +3,21 @@
   src: url(/fonts/ptsans-400.woff2);
 }
 
+/*sticky footer */
+html {
+  height: 100%;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
   font-size: medium;
+  min-height: 100%;/* блок заполнил полностью всё содержимое браузера*/
   font-family: "PT Sans", sans-serif;
   color: #000000;
   text-align: center;
   background: #82B3D3;
+  /*outline-offset: -5px;*/
 }
 
 a {
@@ -22,6 +30,34 @@ a:hover {
   text-decoration: underline;
 }
 
+.main-index {
+  flex-grow: 1;
+}
+
+/*navigation*/
+.header-menu {
+  display: flex;
+  width: 1200px; /* ширина блока */
+  margin: 0 auto; /* отцентровка блока */
+
+}
+/*Header*/
+.menu-logo {
+width: 139px ;
+  padding: 0;
+  margin-left: 70px;
+}
+.menu-list{
+width: 390px ;
+  padding: 0;
+  margin-left: 30px;
+  margin-right: 237px;
+}
+.menu-user{
+ width: 264px ;
+  padding: 0;
+}
+
 .menu-list-item {
   font-style: normal;
   font-weight: 700;
@@ -31,13 +67,31 @@ a:hover {
   text-align: left;
 }
 
+/*Main*/
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*Advantages*/
+/*Добавим флекс, и разнесём блоки по сторонам родительского блока.*/
+.city-advantage {
+  display: flex;
+  justify-content: space-between;
+}
+/*прописать расположение текста в блоке */
+.city-advantage-item{
+  width: 400px;
+}
+
+.test {
+
+
+}
 .block-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: ;
-
 }
 
 .block-title-w {
@@ -70,10 +124,19 @@ a:hover {
   color:#FFFFFF;
 }
 
+.advantages-list-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .advantages-list-subtitle {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
 }
 
 .advantages-list-description-black {
@@ -89,6 +152,39 @@ a:hover {
   line-height: 21px;
   color: #FFFFFF;
 }
+
+.sedona-advantage1 {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
+
+.advantages-list1{
+  width: 400px;
+}
+
+.advantage-list345 {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.advantages-list-description-black {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+/*.advantage-list345-box {*/
+/*  font-weight: 700;*/
+/*  font-size: 24px;*/
+/*  line-height: 28px;*/
+/*  text-transform: uppercase;*/
+/*  color: #000000;*/
+/*}*/
+
+
 
 .phone {
   font-weight: 400;
@@ -130,7 +226,7 @@ a:hover {
   color: #FFFFFF
 }
 
-.nav-Breadcrumbs-item {
+.nav-breadcrumbs-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -189,7 +285,7 @@ h2 {
   color: #333333;
 }
 
-.buttom-favourite,
+.button-favourite,
 .buttom-info {
   font-weight: 700;
   font-size: 16px;
@@ -197,11 +293,11 @@ h2 {
   color: #FFFFFF;
 }
 
-.buttom-favourite {
+.button-favourite {
   background:  #7DB54F;
 }
 
-.buttom-info {
+.button-info {
   background: #756157;
 }
 
@@ -223,4 +319,70 @@ h2 {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: center;
+
+}
+.catalog-filter {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.nav-breadcrumbs {
+  display: flex;
+
+  flex-direction: column;
+;
+}
+
+.catalog-hotels-filter {
+  display: flex;
+}
+
+.hotels-found {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hotel-select {
+  width: 287px;
+  height: 48px;
+  justify-content: space-between;
+}
+
+.hotel-list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: left;
+  flex-wrap: wrap;
+  width: 1056px;
+}
+
+.hotel-card {
+  width: 340px;
+}
+
+.hotels-on-page {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 1056px;
+}
+
+.page-number {
+  display: flex;
+  width: 370px;
+
+}
+
+.page-number-item {
+  width: 55px;
 }
