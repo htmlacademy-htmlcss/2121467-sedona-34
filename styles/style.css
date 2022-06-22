@@ -12,11 +12,11 @@ body {
   display: flex;
   flex-direction: column;
   font-size: medium;
-  min-height: 100%;/* блок заполнил полностью всё содержимое браузера*/
+  min-height: 100%; /* блок заполнил полностью всё содержимое браузера*/
   font-family: "PT Sans", sans-serif;
   color: #000000;
   text-align: center;
-  background: #82B3D3;
+  background: darkgrey;
   /*outline-offset: -5px;*/
 }
 
@@ -41,30 +41,75 @@ a:hover {
   margin: 0 auto; /* отцентровка блока */
 
 }
+
 /*Header*/
-.menu-logo {
-width: 139px ;
+.div-logo{
+  width: 139px;
   padding: 0;
   margin-left: 70px;
+  margin-right: 30px;
+  background: #7DB54F;
 }
-.menu-list{
-width: 390px ;
+
+.div-index-big-image {
+  background-image: url("../images/index-background.jpg");
+  width: 100%;
+  height: 485px;
+
+}
+
+.index-image-welcome {
+  margin: 51px 371px 82px 371px;
+}
+
+.white-line {
+  background-image: url("../images/white-devider.png");
+  width: 100%;
+  height: 57px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+  width: 390px;
   padding: 0;
+  margin-top: 0;
   margin-left: 30px;
   margin-right: 237px;
+  list-style-type: none; /*убираем точки */
+  background: coral;
+
+
 }
-.menu-user{
- width: 264px ;
+
+.menu-user {
+  width: 264px;
   padding: 0;
+  list-style-type: none; /*убираем точки */
 }
 
 .menu-list-item {
   font-style: normal;
+  margin: 20px ; /* верхний правый нижний левый */
+  display: block; /*меняем модель на блочную */
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
-  text-align: left;
+  /*text-align: left;*/
+}
+
+.menu-link{
+  font-style: normal;
+  /*padding: 20px 62px 20px 17px; !* верхний правый нижний левый *!*/
+  display: block; /*меняем модель на блочную */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  /*text-align: left;*/
+
 }
 
 /*Main*/
@@ -72,14 +117,17 @@ width: 390px ;
   width: 1200px;
   margin: 0 auto;
 }
+
 /*Advantages*/
 /*Добавим флекс, и разнесём блоки по сторонам родительского блока.*/
 .city-advantage {
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
+
 /*прописать расположение текста в блоке */
-.city-advantage-item{
+.city-advantage-item {
   width: 400px;
 }
 
@@ -87,6 +135,7 @@ width: 390px ;
 
 
 }
+
 .block-title {
   font-weight: 700;
   font-size: 30px;
@@ -121,7 +170,7 @@ width: 390px ;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color:#FFFFFF;
+  color: #FFFFFF;
 }
 
 .advantages-list-title {
@@ -159,7 +208,7 @@ width: 390px ;
   width: 1200px;
 }
 
-.advantages-list1{
+.advantages-list1 {
   width: 400px;
 }
 
@@ -183,7 +232,6 @@ width: 390px ;
 /*  text-transform: uppercase;*/
 /*  color: #000000;*/
 /*}*/
-
 
 
 .phone {
@@ -294,7 +342,7 @@ h2 {
 }
 
 .button-favourite {
-  background:  #7DB54F;
+  background: #7DB54F;
 }
 
 .button-info {
@@ -326,6 +374,7 @@ h2 {
   justify-content: center;
 
 }
+
 .catalog-filter {
   display: flex;
   justify-content: center;
@@ -337,8 +386,7 @@ h2 {
 .nav-breadcrumbs {
   display: flex;
 
-  flex-direction: column;
-;
+  flex-direction: column;;
 }
 
 .catalog-hotels-filter {
@@ -380,9 +428,22 @@ h2 {
 .page-number {
   display: flex;
   width: 370px;
+  list-style-type: none; /*убираем точки */
 
 }
 
 .page-number-item {
   width: 55px;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
