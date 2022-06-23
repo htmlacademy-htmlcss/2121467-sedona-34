@@ -59,7 +59,7 @@ a:hover {
 }
 
 .index-image-welcome {
-  margin: 51px 371px 82px 371px;
+  margin: 51px 371px 25px 371px;
 }
 
 .white-line {
@@ -122,14 +122,41 @@ a:hover {
 /*Добавим флекс, и разнесём блоки по сторонам родительского блока.*/
 .city-advantage {
   display: flex;
-  justify-content: space-between;
+  width: 1200px;
   list-style-type: none;
+margin: 0;
+  background: coral;
+}
+.icon-house {
+  background-image: url("../images/variant=housing.png");
+  width: 75px;
+  height: 72px;
+  align-items: center;
 }
 
-/*прописать расположение текста в блоке */
-.city-advantage-item {
-  width: 400px;
+
+.div-cityadvantage-text {
+  display: flex;
+  flex-direction: column;
 }
+/*.city-advantage-item {*/
+/*  margin: 80px 85px;*/
+/*}*/
+/*прописать расположение текста в блоке */
+/*.div-cityadvantage-text {*/
+
+/* pa: 80px 85px;*/
+/*  !*background: rgba(131, 179, 211, 0.12);*!*/
+/*}*/
+
+.div-advantage-light-blue-square {
+  background: rgba(131, 179, 211, 0.12);
+  /*width: 400px;*/
+  /*padding: 80px 85px;*/
+}
+/*.1 {*/
+/* flood-color: #7DB54F;*/
+/*}*/
 
 .test {
 
@@ -141,6 +168,20 @@ a:hover {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 63px 290px 31px 290px ;
+  background: #7DB54F;
+}
+
+.block-title {
+  margin-top: 92px;
+  margin-bottom: 29px;
+  margin-bottom: 56px;
+
+}
+
+.block-paragraph {
+  margin-left: 313px;
+  margin-right: 295px;
 }
 
 .block-title-w {
@@ -156,6 +197,8 @@ a:hover {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 90px;
+  background: #7DB54F;
 }
 
 .block-paragraph-w {
@@ -163,6 +206,7 @@ a:hover {
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+
 }
 
 .advantages-list-title-w {
@@ -171,7 +215,10 @@ a:hover {
   line-height: 28px;
   text-transform: uppercase;
   color: #FFFFFF;
+
 }
+
+
 
 .advantages-list-title {
   font-weight: 700;
@@ -208,8 +255,14 @@ a:hover {
   width: 1200px;
 }
 
-.advantages-list1 {
+.div-advantage-blue-square {
+  background: #82B3D3;
   width: 400px;
+}
+
+.advantages-list1 {
+
+  margin: 92px 85px;
 }
 
 .advantage-list345 {
@@ -225,14 +278,16 @@ a:hover {
   color: #333333;
 }
 
-/*.advantage-list345-box {*/
-/*  font-weight: 700;*/
-/*  font-size: 24px;*/
-/*  line-height: 28px;*/
-/*  text-transform: uppercase;*/
-/*  color: #000000;*/
-/*}*/
+.advantage-list345-box {
+  background: #f0f6fa;
+  width: 400px;
+  padding: 103px 85px;
 
+}
+
+.blue {
+ background: #e6f0f6 ;
+}
 
 .phone {
   font-weight: 400;
@@ -249,6 +304,11 @@ a:hover {
   background: #82B3D3;
 }
 
+.subscribe {
+  width: 1200px;
+  background-image: url("../images/background_footer_subscribe.jpg");
+}
+
 .placeholder {
   font-weight: 400;
   font-size: 18px;
@@ -262,9 +322,21 @@ a:hover {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  display: block;
+  background: #756157;
+  width: 544px;
+  margin: 0px auto;
+}
+
+.div-search-button {
+  padding: 12px;
+ height: 60px;
 
 }
 
+.section-interested {
+  padding-bottom: 92px;
+}
 /*Catalog extra*/
 
 .main-catalog-header-title {
