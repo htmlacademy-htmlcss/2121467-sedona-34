@@ -11,7 +11,7 @@ html {
 a {
   display: block;
 }
-ul, li, a, h1,h2,h3, image, dl, dd {
+ul, li, a, h1,h2,h3, image, dl, dd, label {
   margin: 0px;
   padding: 0px;
 }
@@ -52,6 +52,7 @@ a:hover {
   width: 1200px; /* ширина блока */
   margin: 0 auto; /* отцентровка блока */
 
+
 }
 
 /*Header*/
@@ -60,7 +61,8 @@ a:hover {
   padding: 0;
   margin-left: 70px;
   margin-right: 30px;
-  /*margin-bottom: -5px;*/
+  margin-bottom: -10px;
+  position: relative;
   /*background: #7DB54F;*/
 }
 
@@ -81,6 +83,10 @@ a:hover {
   height: 57px;
 }
 
+.div-menu-list {
+
+}
+
 .menu-list {
   display: flex;
   flex-direction: row;
@@ -97,10 +103,53 @@ a:hover {
 }
 
 .menu-user {
+  display: flex;
+  flex-direction: row;
+
   width: 264px;
-  padding: 0;
+  height: 66px;
+  /*margin: 0;*/
   list-style-type: none; /*убираем точки */
+  margin-right: 70px;
+  align-items: center;
 }
+
+.div-user-menu {
+  width: 0;
+  height: 0;
+}
+
+.menu-user-item {
+  /*background: #756157;*/
+  width: 42px;
+  height: 66px;
+}
+
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 24px 12px;
+  fill: #dbdbdb;
+}
+
+.menu-user-link {
+  position: relative;
+  display: block;
+  padding: 24px 12px;
+  font-family: "PT Sans Narrow", sans-serif;
+  /*line-height: 22px;*/
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  /*background-color: #000000;*/
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 
 .menu-list-item {
   font-style: normal;
@@ -354,6 +403,24 @@ div-advantage-light-white-square {
 
 }
 
+.want-button {
+  /*display: inline-block;*/
+  font-weight: 700;
+  font-size: 16px;
+
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #756157;
+  width: 160px;
+  height:37px;
+  border-radius: 5px;
+  /*margin: 0px ;*/
+  /*padding: 0;*/
+  /*border: 0px;*/
+  text-align: center;
+  cursor: pointer;
+}
+
 
 .placeholder {
   width: 600px;
@@ -375,15 +442,16 @@ div-advantage-light-white-square {
 
 .form-subscrube {
   display: flex;
+  justify-content: center;
 
 
 
 }
 
-.label-subscribe{
-  align-items: center;
-  margin-left: 100px;
-}
+/*.label-subscribe{*/
+/*  align-items: center;*/
+/*  margin-left: 100px;*/
+/*}*/
 .subscribe {
   /*width: 1200px;*/
   /*height: 411px;*/
@@ -405,40 +473,36 @@ div-advantage-light-white-square {
   align-items: center;
 }
 
-.
+
 
 .search-button  {
+  display: inline-block;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
-  display: block;
   background: #756157;
-  width: 574px;
-  height: 60px;
-  /*margin: 0px auto;*/
-
-  /*margin-left: 313px;*/
-  /*margin-right: 313px;*/
-  /*text-align: center;*/
-  /*padding-top: 12px;*/
-  /*padding-bottom: 12px;*/
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*text-align: center;*/
+  width: 544px;
+  /*line-heigh: 36px;*/
+  margin-bottom: 93px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.div-search-button {
+/*.div-search-button {*/
 
-  margin-bottom: 96px;
+/*  margin-bottom: 96px;*/
 
-}
+/*}*/
 
 /*.section-interested {*/
 /*  padding-bottom: 92px;*/
 /*}*/
 
 /*Catalog extra*/
+
 
 .main-catalog-header-title {
   font-weight: 700;
@@ -535,8 +599,11 @@ h2 {
   text-align: left;
 }
 
+.div-hotel-card {
+  margin: 20px;
+}
 /*.hotel-card-img {*/
-/*  align-self: stretch;*/
+/*  margin: 20px 20px 16px 20px;*/
 
 /*}*/
 
@@ -588,6 +655,11 @@ h2 {
   display: flex;
   flex-direction: row;
   margin-bottom: 16px;
+}
+
+.div-hotel-list {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .div-stars-rate {
@@ -721,11 +793,13 @@ margin-top: 40px;
 }
 
 .hotel-list {
-  display: flex;
-  margin: 0 auto;
-  justify-content: left;
-  flex-wrap: wrap;
-  width: 1200px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 0;
+  gap: 0px 18px;
+  width: 1056px;
 
 
 }
@@ -758,8 +832,8 @@ margin-top: 40px;
 
 }
 .hotel-card {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;*/
+  /*flex-direction: column;*/
   width: 340px;
   list-style-type: none; /*убираем точки */
   margin-right: 18px;
@@ -838,6 +912,8 @@ margin-top: 40px;
   margin-bottom: 43px;
   margin-right: 72px ;
 }
+
+
 
 /*discord answer */
 /*.footer-social-link {*/

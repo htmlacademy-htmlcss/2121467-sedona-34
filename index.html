@@ -26,12 +26,22 @@
     <!-- User menu -->
     <div class="div-user-menu">
       <ul class="menu-user">
-        <li class="menu-user-item"><a class="menu-user-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        <li class="menu-user-item">
+          <a class="menu-user-link" href="#">
+            <svg class="navigation-icon"  aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm-.665 5.249a6.5 6.5 0 111.414-1.414l3.958 3.958-1.414 1.414-3.958-3.958z" />
+            </svg>
+            <span class="visually-hidden">Поиск</span>
+          </a>
         </li>
-        <li class="menu-user-item"><a class="menu-user-link" href="#"><span
-          class="visually-hidden">В избранное</span><span>12</span></a></li>
-        <li class="menu-user-item"><a class="menu-user-link" href="#"><span
-          class="visually-hidden">Хочу сюда!</span></a>
+        <li class="menu-user-item">
+          <a class="menu-user-link" href="#">
+            <span class="visually-hidden">В избранное</span>
+            <span>12</span>
+          </a>
+        </li>
+        <li class="menu-user-item">
+          <button class="want-button" type="submit">Хочу сюда!</button>
         </li>
 
       </ul>
@@ -137,23 +147,24 @@
     <h2 class="block-title">ЗАИНТЕРЕСОВАЛИСЬ</h2>
     <p class="block-paragraph">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
       Седоне</p>
-    <div class="div-search-button">
+<!--    <div class="div-search-button">-->
       <a href="#" class="search-button">Поиск гостиницы в Седоне</a>
-    </div>
+<!--    </div>-->
   </section>
   <!-- Subscribe to get new info by mail -->
   <div class="subscribe">
-<div class="div-text-subscribe">
-    <h2 class="block-title-w subscribe-mail">Подпишитесь на рассылку</h2>
-    <p class="block-paragraph-w useful-info">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+    <div class="div-text-subscribe">
+      <h2 class="block-title-w subscribe-mail">Подпишитесь на рассылку</h2>
+      <p class="block-paragraph-w useful-info">Только полезная информация и никакого спама, <br> честное бойскаутское!
+      </p>
 
-    <form action="https://echo.htmlacademy.ru/" method="post" class="form-subscrube">
-      <label class="label-subscribe">
-        <input type="text" class="placeholder" placeholder="Введите ваш e-mail">
-      </label>
-      <button class="subscribe-button" type="submit">Подписаться</button>
-    </form>
-</div>
+      <form action="https://echo.htmlacademy.ru/" method="post" class="form-subscrube">
+        <label class="label-subscribe">
+          <input type="text" class="placeholder" placeholder="Введите ваш e-mail">
+        </label>
+        <button class="subscribe-button" type="submit">Подписаться</button>
+      </form>
+    </div>
   </div>
 </main>
 <!-- FOOTER -->
