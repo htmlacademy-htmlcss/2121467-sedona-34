@@ -123,6 +123,7 @@ a:hover {
   /*background: #756157;*/
   width: 42px;
   height: 66px;
+
 }
 
 
@@ -132,14 +133,16 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 24px 12px;
+  margin: auto;
   fill: #dbdbdb;
 }
 
 .menu-user-link {
   position: relative;
   display: block;
-  padding: 24px 12px;
+  min-height: 66px;
+  min-width: 42px;
+  /*padding: 24px 12px;*/
   font-family: "PT Sans Narrow", sans-serif;
   /*line-height: 22px;*/
   font-weight: 700;
@@ -150,6 +153,21 @@ a:hover {
   text-transform: uppercase;
 }
 
+.menu-user-link-favourite:after {
+  position: absolute;
+  content: "12";
+  font-size: 10px;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 25px;
+  border-radius: 10px;
+  background-color: #7db54f;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
 
 .menu-list-item {
   font-style: normal;
@@ -349,8 +367,14 @@ div-advantage-light-white-square {
 .div-advantage-blue-square {
   background: #82B3D3;
   width: 400px;
+  height: 384px;
 }
 
+.advantages-image1 {
+  background-image: url("../images/devil-bridge.jpg");
+  width: 800px;
+  height: 384px;
+}
 .advantages-list1 {
 
   margin: 92px 85px;
