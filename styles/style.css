@@ -38,9 +38,9 @@ a {
 
 }
 
-a:hover {
-  text-decoration: underline;
-}
+/*a:hover {*/
+/*  text-decoration: underline;*/
+/*}*/
 
 .main-index {
   flex-grow: 1;
@@ -49,6 +49,7 @@ a:hover {
 /*navigation*/
 .header-menu {
   display: flex;
+
   width: 1200px; /* ширина блока */
   margin: 0 auto; /* отцентровка блока */
 
@@ -110,11 +111,12 @@ a:hover {
   height: 66px;
   /*margin: 0;*/
   list-style-type: none; /*убираем точки */
-  margin-right: 70px;
+  /*margin-right: 70px;*/
   align-items: center;
 }
 
 .div-user-menu {
+  display: flex;
   width: 0;
   height: 0;
 }
@@ -136,6 +138,21 @@ a:hover {
   margin: auto;
   fill: #dbdbdb;
 }
+
+
+.item-current::before {
+
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 68px;
+  bottom: 0;
+  top: 66px;
+  background-color: rgba(117, 98, 87, 1);
+  z-index: 1;
+}
+}
+
 
 .menu-user-link {
   position: relative;
@@ -171,6 +188,7 @@ a:hover {
 
 .menu-list-item {
   font-style: normal;
+  white-space: nowrap;
   margin: 20px; /* верхний правый нижний левый */
   display: block; /*меняем модель на блочную */
   font-weight: 700;
@@ -410,6 +428,21 @@ div-advantage-light-white-square {
   line-height: 40px;
   margin-top: 45px;
 }
+.phone:hover {
+  color:#756157;
+}
+
+.phone:focus {
+  color:#756157;
+}
+
+.phone:active {
+  color:#756157;
+  opacity: 30%;
+}
+
+
+
 
 .subscribe-button {
   font-weight: 700;
@@ -428,22 +461,46 @@ div-advantage-light-white-square {
 }
 
 .want-button {
-  /*display: inline-block;*/
-  font-weight: 700;
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  min-width: 160px;
+  align-self: flex-start;
+  border: 3px transparent;
   font-size: 16px;
-
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756257;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background: #756157;
-  width: 160px;
-  height:37px;
-  border-radius: 5px;
-  /*margin: 0px ;*/
-  /*padding: 0;*/
-  /*border: 0px;*/
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 9px;
+  padding-bottom: 8px;
   text-align: center;
+  margin-left: 20px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-family: inherit;
   cursor: pointer;
 }
+
+.want-button:hover {
+  background-color: #615048;
+}
+
+.want-button:focus {
+  background-color: #615048;
+}
+
+.want-button:active{
+  background-color: #756157;
+  opacity: 30%;
+}
+
+
+
 
 
 .placeholder {
@@ -731,7 +788,7 @@ h2 {
 .page-footer {
   display: flex;
   justify-content: center;
-  background: blue;
+  /*background: blue;*/
   width: 1200px;
   height: 120px;
   margin: 0px auto;
@@ -912,22 +969,39 @@ margin-top: 40px;
 .socialmedia-list  {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   list-style-type: none; /*удаляем точки*/
-  background: #7DB54F;
+/*  background: #7DB54F;*/
   width: 116px;
   margin-left: 72px ;
   margin-top: 49px;
   margin-bottom: 54px;
   margin-right: 247px;
-  background-image: url("../images/vk.png");
-  background-repeat: no-repeat;
-  background-image: url("../images/telega.png");
+
+
+/*.socialmedia-item {*/
+/*  background: #756157;*/
+/*  width: 20px;*/
 }
 
-.socialmedia-item {
-  background: #756157;
-  width: 20px;
+/*.a-sm-icon:hover .svg-sm-icon {*/
+/*  fill: black;*/
+/*}*/
+
+.svg-sm-icon{
+  fill: #83B3D3;
+}
+
+.svg-sm-icon:hover{
+  fill: #68A2CA;
+}
+.svg-sm-icon:focus {
+  fill:#68A2CA;
+}
+.svg-sm-icon:active {
+ fill:#68A2CA;
+  fill-opacity: 30%;
 }
 
 .html-logo {
@@ -938,6 +1012,20 @@ margin-top: 40px;
 }
 
 
+.svg-html-logo {
+  fill: #000000;
+}
+
+.svg-html-logo:hover{
+  fill: #756157;
+}
+.svg-html-logo:focus {
+  fill: #756157;
+}
+.svg-html-logo:active {
+  fill: #756157;
+  fill-opacity: 30%;
+}
 
 /*discord answer */
 /*.footer-social-link {*/
