@@ -1025,26 +1025,24 @@ margin-top: 40px;
 }
 
 .filter-icons-cards {
-  background-image: url("../images/icon-card.png");
-  width: 48px;
-  height: 48px;
+
   margin-right: 8px;
+  margin: 14px;
 }
 
 .filter-icons-tape{
-  background-image: url("../images/icon-tape.png");
-  width: 48px;
-  height: 48px;
+
+
   margin-right: 8px;
 }
 
-.filter-icons-list {
-  background-image: url("../images/icon-list.png");
-  width: 48px;
-  height: 48px;
+/*.filter-icons-list {*/
+/*  background-image: url("../images/icon-list.png");*/
+/*  width: 48px;*/
+/*  height: 48px;*/
 
 
-}
+/*}*/
 .hotel-card {
   /*display: flex;*/
   /*flex-direction: column;*/
