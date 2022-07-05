@@ -77,32 +77,95 @@
       <div class="catalog-filter">
         <form action="https://echo.htmlacademy.ru/" class="catalog-hotels-filter" method="get">
           <!-- Catalog checkbox  -->
-          <fieldset class="filter">
+
+          <fieldset class="filter checkbox">
             <legend class="filter-title">Инфраструктура</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
+                </label>
+              </li>
 
-            <input type="checkbox" id="swimming-pool" name="infrastructure" checked>
-            <label for="swimming-pool">Бассейн</label>
-
-            <input type="checkbox" id="parking" name="nfrastructure">
-            <label for="parking">Парковка</label>
-
-            <input type="checkbox" id="wi-fi" name="nfrastructure">
-            <label for="wi-fi">Wi-Fi</label>
+            </ul>
           </fieldset>
-          <!-- Catalog radio  -->
-          <fieldset class="filter">
-            <legend class="filter-title">Тип жилья</legend>
 
-            <input type="radio" id="guest-house" name="accomodation-type" checked>
-            <label for="guest-house">Гостиница</label>
-
-            <input type="radio" id="hotel" name="accomodation-type">
-            <label for="hotel">Отель</label>
-
-            <input type="radio" id="appartment" name="accomodation-type">
-            <label for="appartment">Аппартаменты</label>
+          <fieldset class="filter radio">
+            <legend class="filter-title">Тип Жилья</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гостиница</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="hostel">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мотель</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="appartment">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Аппартаменты</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
         </form>
+
+
+
+
+
+
+
+<!--          <fieldset class="filter checkbox">-->
+<!--            <legend class="filter-title">Инфраструктура</legend>-->
+
+<!--            <input type="checkbox" id="swimming-pool" name="infrastructure" checked>-->
+<!--            <label for="swimming-pool" class="cb-radio-options">Бассейн</label>-->
+
+<!--            <input type="checkbox" id="parking" name="nfrastructure">-->
+<!--            <label for="parking" class="cb-radio-options">Парковка</label>-->
+
+<!--            <input type="checkbox" id="wi-fi" name="nfrastructure">-->
+<!--            <label for="wi-fi" class="cb-radio-options">Wi-Fi</label>-->
+<!--          </fieldset>-->
+<!--          &lt;!&ndash; Catalog radio  &ndash;&gt;-->
+<!--          <fieldset class="filter radio">-->
+<!--            <legend class="filter-title">Тип жилья</legend>-->
+
+<!--            <input type="radio" id="guest-house" name="accomodation-type" checked>-->
+<!--            <label for="guest-house" class="cb-radio-options">Гостиница</label>-->
+
+<!--            <input type="radio" id="hotel" name="accomodation-type">-->
+<!--            <label for="hotel" class="cb-radio-options">Отель</label>-->
+
+<!--            <input type="radio" id="appartment" name="accomodation-type">-->
+<!--            <label for="appartment" class="cb-radio-options">Аппартаменты</label>-->
+<!--          </fieldset>-->
+<!--        </form>-->
         <div class="div-filter-price">
 
         </div>
@@ -129,17 +192,14 @@
       <!-- Icons next to filter  -->
       <div class="filter-icons">
         <a class="filter-icons-cards" href="#">
-          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
-<!--            <rect width="160" height="160" x="20" y="20"-->
-<!--                  fill="none"-->
-<!--                  stroke="yellowgreen"/>-->
+          <svg class="svg-border" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
           </svg>
           <span class="visually-hidden">Карточки</span></a>
         <a class="filter-icons-tape" href="#">
-          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
+          <svg class="svg-border" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
           <span class="visually-hidden">Лента</span></a>
         <a class="filter-icons-list" href="#">
-          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
+          <svg class="svg-border" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
           <span class="visually-hidden">Список</span></a>
       </div>
     </div>
@@ -162,10 +222,10 @@
           </div>
           <div class="div-stars-rate">
             <div class="rate-img-stars">
-              <div class="div-rate-img-stars"></div>
-              <div class="div-rate-img-stars"></div>
-              <div class="div-rate-img-stars"></div>
-              <div class="div-rate-img-stars"></div>
+              <span class="span-rate-img-stars"></span>
+              <span class="span-rate-img-stars"></span>
+              <span class="span-rate-img-stars"></span>
+              <span class="span-rate-img-stars"></span>
 
 
               <span class="visually-hidden stars">4 звезды</span>
@@ -189,14 +249,14 @@
               </dl>
               <div class="div-hotel-button">
                 <a class="button-info" href="#">Подробнее</a>
-                <a class="button-favourite" type="submit">В избранное</a>
+                <button class="button-favourite b-f-green" type="submit">В избранном</button>
               </div>
               <div class="div-stars-rate">
                 <div class="rate-img-stars">
-                  <div class="div-rate-img-stars"></div>
-                  <div class="div-rate-img-stars"></div>
-                  <div class="div-rate-img-stars"></div>
-                  <div class="div-rate-img-stars"></div>
+                  <span class="span-rate-img-stars"></span>
+                  <span class="span-rate-img-stars"></span>
+                  <span class="span-rate-img-stars"></span>
+                  <span class="span-rate-img-stars"></span>
 
 
                   <span class="visually-hidden stars">4 звезды</span>
@@ -225,9 +285,9 @@
           </div>
           <div class="div-stars-rate">
             <div class="rate-img-stars">
-              <div class="div-rate-img-stars"></div>
-              <div class="div-rate-img-stars"></div>
-              <div class="div-rate-img-stars"></div>
+              <span class="span-rate-img-stars"></span>
+              <span class="span-rate-img-stars"></span>
+              <span class="span-rate-img-stars"></span>
 
 
 
@@ -256,8 +316,8 @@
           </div>
           <div class="div-stars-rate">
             <div class="rate-img-stars">
-              <div class="div-rate-img-stars"></div>
-              <div class="div-rate-img-stars"></div>
+              <span class="span-rate-img-stars"></span>
+              <span class="span-rate-img-stars"></span>
 
 
 
@@ -292,12 +352,14 @@
     <li class="li-page-number"><a class="page-number-item" href="#">10</a></li>
   </ul>
   <!-- Select how many hotels at the page -->
-  <label for="hotel-number" class="hotel-number">Гостиниц на странице</label>
+  <form class="form-hotel-number">
+  <label for="hotel-number" class="hotel-number">Гостиниц на странице:</label>
   <select id="hotel-number" class="select-hotel-on-page">
     <option value="4" selected>4</option>
     <option value="6">6</option>
     <option value="8">8</option>
   </select>
+  </form>
 </div>
 
 <!-- Subscribe to get new info by mail -->
