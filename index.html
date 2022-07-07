@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>HTML academy: SEDONA</title>
@@ -238,7 +238,7 @@
     <div class="modal-window">
       <div class="heading-plus-cross">
         <h2 class="heading-search">Поиск гостиницы в седоне</h2>
-        <button class="close">
+        <button class="btn-close">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </div>
@@ -259,12 +259,13 @@
           <div class="adults">
             <label class="label-adults-amount" for="modal-adult-amount">взрослые:</label>
             <div class="div-adult-input">
-              <input class="input-adult-amount" type="number" id="modal-adult-amount" name="modal-adult-amount"
-                     placeholder="2">
               <button class="btn-amount btn-amount-less">
                 <span class="visually-hidden">Меньше</span>
                 <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
               </button>
+              <input class="input-adult-amount" type="number" id="modal-adult-amount" name="modal-adult-amount"
+                     placeholder="2">
+
               <button class="btn-amount btn-amount-more">
                 <span class="visually-hidden">Больше</span>
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3"/></svg>
@@ -274,21 +275,24 @@
           <div class="kids">
             <label class="label-kids-amount" for="modal-kids-amount">дети:</label>
             <div class="div-kids-input">
-              <input class="input-kids-amount" type="number" id="modal-kids-amount" name="modal-kids-amount"
-                     placeholder="1">
               <button class="btn-amount btn-amount-less">
                 <span class="visually-hidden">Меньше</span>
                 <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
               </button>
+              <input class="input-kids-amount" type="number" id="modal-kids-amount" name="modal-kids-amount"
+                     placeholder="1">
+
               <button class="btn-amount btn-amount-more">
                 <span class="visually-hidden">Больше</span>
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" opacity=".3"/></svg>
               </button>
             </div>
           </div>
-          <div class="modal-btn-search">Найти</div>
-
         </div>
+           <button class="modal-btn-search">Найти</button>
+
+
+
       </form>
     </div>
   </div>
