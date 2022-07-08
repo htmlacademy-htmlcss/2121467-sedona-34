@@ -1006,13 +1006,7 @@ h2 {
   line-height: 36px;
 }
 
-.hotel-select {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  margin-right: 78px;
-}
+
 
 
 
@@ -1313,8 +1307,17 @@ margin-top: 40px;
   width: 287px;
   height: 48px;
   justify-content: space-between;
-}
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  margin-right: 78px;
 
+}
+ .hotel-select:hover {
+border-color: rgba(229, 229, 229, 1);
+
+ }
 .hotel-list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
@@ -1711,25 +1714,47 @@ top: 0;
 .label-kids-amount {
   margin-right: 5px;
 }
-.div-tooltip {
-position: absolute;
-  width: 256px;
-  min-height: 143px;
-  background-color: rgba(51, 51, 51, 1);
-  border-radius: 10px;
-  /*padding: 15px 18px 18px 22px;*/
+/*.div-tooltip {*/
+/*position: absolute;*/
+/*  width: 256px;*/
+/*  min-height: 143px;*/
+/*  background-color: rgba(51, 51, 51, 1);*/
+/*  border-radius: 10px;*/
+/*  !*padding: 15px 18px 18px 22px;*!*/
 
-}
+/*}*/
 .tooltip {
-  position: relative;
-text-align: left;
-transform: translateY(-200%);
+
+  position: absolute;
+  background-color: rgba(51, 51, 51, 1);
+  width: 216px;
+  min-height: 110px;
+  color: #FFFFFF;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
-  margin-right: 18px;
+  text-align: left;
+  border-radius: 10px;
+  padding: 15px 18px 18px 22px;
+  text-align: left;
+  bottom: -155px;
+  left: -110px;
+
+}
+
+.tooltip:before {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #333333;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  top: -18px;
+  right: 126px;
+
+
+
 
 }
 .kids-info {
@@ -1841,13 +1866,24 @@ margin-right: 5px;
 }
 
 .input-kids-amount,
-.input-adult-amount
-{
+.input-adult-amount {
   width: 44px;
   height: 48px;
-  background-color: #F2F2F2 ;
+  background-color: #F2F2F2;
   border: none;
   text-align: center;
+}
+.input-kids-amount::placeholder
+.input-adult-amount::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height, or 117% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
 }
 
 .btn-amount-less,
