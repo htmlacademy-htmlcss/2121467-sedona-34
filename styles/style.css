@@ -1663,7 +1663,7 @@ top: 0;
   left: 35%;
 
 
-  min-height: 561px;
+  min-height: 437px;
   background-color: rgba(255, 255, 255, 1);
   padding: 62px 70px;
   border-radius: 30px;
@@ -1673,7 +1673,10 @@ top: 0;
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 575px;
+  max-height: 437px;
+  width: 575px
+
+
   /*margin-bottom: 70px;*/
 
 }
@@ -1697,22 +1700,72 @@ top: 0;
   font-size: 20px;
   line-height: 26px;
   display: flex;
+  text-align: left;
   align-items: center;
   text-transform: capitalize;
+  white-space: nowrap;
+}
+.label-adults-amount {
+  margin-right: 64px;
+}
+.label-kids-amount {
+  margin-right: 5px;
+}
+.div-tooltip {
+position: absolute;
+  width: 256px;
+  min-height: 143px;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 10px;
+  /*padding: 15px 18px 18px 22px;*/
+
+}
+.tooltip {
+  position: relative;
+text-align: left;
+transform: translateY(-200%);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-right: 18px;
+
+}
+.kids-info {
+  position: relative;
+  transform: translateY(50%);
+margin-right: 5px;
+  background-color: rgba(131, 179, 211, 1);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url("../images/icon-kids-info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+
 }
 
 .label-check-in-date {
-  margin-right: 61px;
+  margin-right: 42px;
+}
+
+.label-check-out-date {
+  margin-right: 36px;
 }
 .check-in-comment {
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   color: #FF5757;
-  margin-left: 225px;
+  margin-left: 155px;
+  margin-bottom: 11px;
+
 }
 
 .check-out-comment {
@@ -1721,8 +1774,10 @@ top: 0;
   font-size: 16px;
   line-height: 21px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   color: #333333 ;
+  margin-left: 155px;
+  margin-bottom: 11px;
 }
 
 .input-check-in-date,
@@ -1747,6 +1802,9 @@ top: 0;
   display: flex;
   justify-content: space-between;
 }
+.adults {
+  margin-right: 56px;
+}
 
 .modal-btn-search {
 
@@ -1763,6 +1821,7 @@ top: 0;
   background-color: #83B3D3;
   border: none;
   border-radius: 10px;
+  margin-top: 40px;
 
 }
 
@@ -1781,17 +1840,49 @@ top: 0;
   color: #000000;
 }
 
-/*.div-adult-input {*/
-/*  width: 133px;*/
-/*  height: 50px;*/
-/*}*/
+.input-kids-amount,
+.input-adult-amount
+{
+  width: 44px;
+  height: 48px;
+  background-color: #F2F2F2 ;
+  border: none;
+  text-align: center;
+}
+
+.btn-amount-less,
+.btn-amount-more {
+  width: 44px;
+  height: 50px;
+  background-color: #F2F2F2 ;
+  border: none;
+  text-align: center;
+
+
+}
+
+.btn-amount-less {
+  border-radius: 4px 0px 0px 4px;
+}
+.btn-amount-more {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.div-adult-input,
+.div-kids-input{
+  display: flex;
+
+
+}
+
 
 .input-check-in-date,
 .input-check-out-date {
   background-image: url("../images/modal-calendar.svg");
   background-size: 15px 15px;
   background-repeat: no-repeat;
-  background-position: 405px;
+  background-position: 370px;
+border: none;
 
 }
 
