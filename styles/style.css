@@ -730,12 +730,24 @@ div-advantage-light-white-square {
 }
 
 .range-toggle:hover {
-  background-color: #dbb590;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
-.range-toggle:active,
+
 .range-toggle:focus {
-  outline: 3px solid #dbb590;
+  background: #FFFFFF;
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.range-toggle:active {
+  background: #FFFFFF;
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 
@@ -990,6 +1002,9 @@ display: flex;
 
 
 .sedona-button-small {
+display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -998,8 +1013,30 @@ display: flex;
   margin: 0px;
   padding: 0;
   border: 0px;
+  height: 32px;
+  width: 100px;
+  padding-left: 60px;
+
 }
 
+.sedona-button-small:hover {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.sedona-button-small:focus {
+  padding: 0px;
+  color: #FFFFFF;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.sedona-button-small:active {
+
+}
+
+.sedona-button-small:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
 h2 {
   font-weight: 700;
   font-size: 30px;
@@ -1304,6 +1341,7 @@ margin-top: 40px;
 /*  margin-left: 0;*/
 /*}*/
 .hotel-select {
+
   width: 287px;
   height: 48px;
   justify-content: space-between;
@@ -1312,9 +1350,43 @@ margin-top: 40px;
   line-height: 21px;
   color: #333333;
   margin-right: 78px;
+/*сброс стилей */
+padding-left: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.hotel-select:hover,
+.hotel-select:focus {
+  border: 2px solid #68A2CA;
+  border-radius: 4px;
 
 }
- .hotel-select:hover {
+
+.hotel-select:active {
+  border: 2px solid #3F5E72;
+  border-radius: 4px;
+}
+
+.hotel-select:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+  /*.hotel-select:after {*/
+/*  content: "";*/
+/*  background-image: url("../images/selector.svg");*/
+/*position: relative;*/
+/*  width: 10px;*/
+/*  height: 10px;*/
+/*}*/
+
+.hotel-select:hover {
 border-color: rgba(229, 229, 229, 1);
 
  }
@@ -1814,7 +1886,8 @@ margin-right: 5px;
   line-height: 21px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #666666;
+  background-color: #F2F2F2;
 
 }
 
@@ -1827,6 +1900,27 @@ margin-right: 5px;
   display: flex;
   justify-content: space-between;
 }
+
+.input-check-in-date:hover,
+.input-check-out-date:hover{
+  background-color: #E6E6E6;
+}
+
+.input-check-in-date:focus,
+.input-check-out-date:focus{
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.input-check-in-date:active,
+.input-check-out-date:active {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+
 .adults {
   margin-right: 56px;
 }
@@ -1849,6 +1943,25 @@ margin-right: 5px;
   margin-top: 40px;
 
 }
+.
+.modal-btn-search:hover{
+  background: #68A2CA;
+  order-radius: 10px;
+
+}
+.modal-btn-search:focus{
+  background: #68A2CA;
+  border: 3px solid #756257;
+  border-radius: 10px;
+}
+
+.modal-btn-search:active{
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+  order-radius: 10px;
+
+}
+
 
 .input-check-in-date,
 .input-check-out-date {
@@ -1862,7 +1975,7 @@ margin-right: 5px;
 
 .input-check-in-date::placeholder,
 .input-check-out-date::placeholder {
-  color: #000000;
+  color: #666666;;
 }
 
 .input-kids-amount,
@@ -1911,6 +2024,39 @@ margin-right: 5px;
 
 }
 
+.svg-btn-more,
+.svg-btn-less{
+  opacity: 0.3;
+  color: #000000;
+}
+.svg-btn-more:hover,
+.svg-btn-less:hover{
+  opacity: 1;
+  color: #000000;
+}
+
+.svg-btn-more:focus {
+  opacity: 1;
+  color: #000000;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.svg-btn-less:focus {
+  opacity: 1;
+  color: #000000;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  padding: 12px 6px;
+}
+
+.svg-btn-more:active,
+.svg-btn-less:active{
+  opacity: 0.3;
+  color: #000000;
+
+}
 
 .input-check-in-date,
 .input-check-out-date {
