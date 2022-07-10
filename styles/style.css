@@ -1391,13 +1391,7 @@ padding-left: 20px;
 
 }
 
-  /*.hotel-select:after {*/
-/*  content: "";*/
-/*  background-image: url("../images/selector.svg");*/
-/*position: relative;*/
-/*  width: 10px;*/
-/*  height: 10px;*/
-/*}*/
+
 
 .hotel-select:hover {
 border-color: rgba(229, 229, 229, 1);
