@@ -28,6 +28,7 @@ body {
   font-family: "PT Sans", sans-serif;
   color: #000000;
   text-align: center;
+  margin: auto 0px;
   /*background: darkgrey;*/
   /*outline-offset: -5px;*/
 }
@@ -727,6 +728,7 @@ div-advantage-light-white-square {
  border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .range-toggle:hover {
@@ -786,13 +788,20 @@ div-advantage-light-white-square {
   padding-right: 14px;
   background-color: transparent;
   border: 2px solid #FFFFFF;
+
+
+}
+/*Убираем стрелочки */
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
-/*.input-price::-webkit-outer-spin-button,*/
-/*.input-price::-webkit-inner-spin-button {*/
-/*  appearance: none;*/
-/*  margin: 0;*/
-/*}*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
 
 .input-price::placeholder {
   font-family: inherit;
@@ -911,26 +920,27 @@ display: flex;
 /* Control */
 .control {
   position: relative;
-  display: block;
+  display: flex;
   padding-left: 20px;
 }
 
 /* Mark */
 .control-mark {
   position: absolute;
-  top: 2px;
+  /*top: 2px;*/
   left: 0;
   width: 20px;
   height: 20px;
   background-color: white;
   border-radius: 4px;
   /*border: 2px solid #242424;*/
+
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 25%;
-  left: 20%;
+  left: 25%;
   /*transform: translateY(-50%)*/
   width: 20px;
   height: 20px;
@@ -947,15 +957,17 @@ display: flex;
 }
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  /*top: 26%;*/
-  /*left: 26%;*/
-  top: 5px;
-  left: 5px;
+
+  /*left: 23%;*/
+  /*right: 25%;*/
+  /*top: 22%;*/
+  /*bottom: 25%;*/
   width: 10px;
   height: 10px;
   content: "";
   background-color: #3F5E72;
   border-radius: 50%;
+  transform: translate(-47%, 47%);
 
 }
 
@@ -1015,8 +1027,9 @@ display: flex;
   border: 0px;
   height: 32px;
   width: 100px;
-  padding-left: 60px;
-
+  /*padding-left: 60px;*/
+  box-sizing: border-box;
+  align-self: center;
 }
 
 .sedona-button-small:hover {
@@ -1352,9 +1365,9 @@ margin-top: 40px;
   margin-right: 78px;
 /*сброс стилей */
 padding-left: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  /*-webkit-appearance: none;*/
+  /*-moz-appearance: none;*/
+  /*appearance: none;*/
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   cursor: pointer;
@@ -1703,6 +1716,7 @@ background: #F2F2F2;
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  align-self: flex-end;
 }
 
 
@@ -1734,14 +1748,13 @@ top: 0;
 .modal-window {
 
   position: absolute;
-  margin-top: 396px;
-  left: 35%;
-
-
+  top: 50%;
+  left: 50%;
   min-height: 437px;
   background-color: rgba(255, 255, 255, 1);
   padding: 62px 70px;
   border-radius: 30px;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -1796,7 +1809,7 @@ top: 0;
 
 /*}*/
 .tooltip {
-
+visibility: hidden;
   position: absolute;
   background-color: rgba(51, 51, 51, 1);
   width: 216px;
@@ -1844,6 +1857,14 @@ margin-right: 5px;
 
 }
 
+.kids-info:hover .tooltip {
+  visibility: visible;
+}
+
+.kids-info:hover {
+  background-color:  #68A2CA;;
+}
+
 .label-check-in-date {
   margin-right: 42px;
 }
@@ -1889,6 +1910,7 @@ margin-right: 5px;
   color: #666666;
   background-color: #F2F2F2;
 
+
 }
 
 .check-in-date,
@@ -1908,14 +1930,14 @@ margin-right: 5px;
 
 .input-check-in-date:focus,
 .input-check-out-date:focus{
-  background: #E6E6E6;
+  background-color: #E6E6E6;
   border: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
 .input-check-in-date:active,
 .input-check-out-date:active {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 2px solid #000000;
   border-radius: 4px;
 }
@@ -1958,7 +1980,7 @@ margin-right: 5px;
 .modal-btn-search:active{
   background: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
-  order-radius: 10px;
+  border-radius: 10px;
 
 }
 
@@ -1971,6 +1993,7 @@ margin-right: 5px;
   border-radius: 4px;
   border: none;
   padding-left: 19px;
+  box-sizing: border-box;
 }
 
 .input-check-in-date::placeholder,
@@ -2005,7 +2028,8 @@ margin-right: 5px;
   height: 50px;
   background-color: #F2F2F2 ;
   border: none;
-  text-align: center;
+  vertical-align: center;
+  box-sizing: border-box;
 
 
 }
@@ -2015,6 +2039,30 @@ margin-right: 5px;
 }
 .btn-amount-more {
   border-radius: 0px 4px 4px 0px;
+}
+
+.btn-amount-more :hover,
+.btn-amount-less:hover{
+  opacity: 1;
+  color: #000000;
+
+}
+
+.btn-amount-more :focus,
+.btn-amount-less:focus{
+  opacity: 1;
+  color: #000000;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  /*padding: 6px;*/
+}
+
+
+.btn-amount-more :active,
+.btn-amount-less:active{
+  opacity: 0.3;
+  color: #000000;
+
 }
 
 .div-adult-input,
@@ -2028,35 +2076,9 @@ margin-right: 5px;
 .svg-btn-less{
   opacity: 0.3;
   color: #000000;
-}
-.svg-btn-more:hover,
-.svg-btn-less:hover{
-  opacity: 1;
-  color: #000000;
+  vertical-align: middle;
 }
 
-.svg-btn-more:focus {
-  opacity: 1;
-  color: #000000;
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
-  padding: 6px;
-}
-
-.svg-btn-less:focus {
-  opacity: 1;
-  color: #000000;
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
-  padding: 12px 6px;
-}
-
-.svg-btn-more:active,
-.svg-btn-less:active{
-  opacity: 0.3;
-  color: #000000;
-
-}
 
 .input-check-in-date,
 .input-check-out-date {
@@ -2064,7 +2086,7 @@ margin-right: 5px;
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position: 370px;
-border: none;
+  border: none;
 
 }
 
