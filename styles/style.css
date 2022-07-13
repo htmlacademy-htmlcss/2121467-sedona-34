@@ -11,6 +11,15 @@ input {
   font-size: 18px;
 }
 
+.shadow-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 a {
   display: block;
 }
@@ -884,7 +893,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .radio {
-  margin-right: 168px;
+  margin-right: 176px;
 }
 
 /* Control */
@@ -1309,7 +1318,7 @@ h2 {
   height: 48px;
   justify-content: space-between;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   color: #333333;
   margin-right: 78px;
@@ -1340,7 +1349,8 @@ h2 {
   background-repeat: no-repeat;
   background-position: 127px 20px;
   box-sizing: border-box;
-  border-color: rgba(229, 229, 229, 1);
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .hotel-select:hover,
@@ -1659,7 +1669,7 @@ h2 {
 }
 .label-adults-amount {
   margin-right: 64px;
-  margin-left: 7px;
+  margin-left: 0px;
 }
 .label-kids-amount {
   margin-right: 22px;
