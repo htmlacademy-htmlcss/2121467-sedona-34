@@ -44,7 +44,6 @@ body {
   color: #000000;
   text-align: center;
   margin: auto 0px;
-  overflow-x:hidden;
 }
 
 a {
@@ -1273,7 +1272,7 @@ h2 {
 .catalog-filter {
   display: flex;
   justify-content: flex-start;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
 }
 
