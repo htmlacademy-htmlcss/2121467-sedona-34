@@ -80,6 +80,7 @@ button {
 
 .div-index-big-image {
   background-image: url("../images/index-background.jpg");
+  background-color: #3F5E72;
   display: block;
   width: 100%;
   height: 485px;
@@ -574,6 +575,7 @@ div-advantage-light-white-square {
 
 .subscribe {
   background-image: url("../images/background-footer-subscribe.jpg");
+  background-color: #3F5E72;
   padding: 94px;
   background-repeat: no-repeat;
 }
@@ -1606,6 +1608,7 @@ h2 {
 
 .div-catalog-bg {
   background-image: url("../images/catalog-background.png");
+  background-color: #3F5E72;
   width: 1200px;
   height: 403px;
   margin: 0px auto;
