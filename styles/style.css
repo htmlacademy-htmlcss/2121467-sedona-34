@@ -1034,7 +1034,7 @@ input[type="checkbox"].control-input:active + .control-mark {
   line-height: 20px;
   color: #FFFFFF;
   background: transparent;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   border: 0px;
   height: 32px;
